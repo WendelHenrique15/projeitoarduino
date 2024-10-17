@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página 2</title>
+</head>
+<body>
+  <nav>
+    <a href="./index.html">Página 1</a>
+    <a href="./tinkercad.html">Página 2</a>
+    <a href="./arduino.html">Página 3</a>
+    <a href="./semafaroduplo.html">Página 4</a>
+    <a href="./semafaroduploarduino.html">Página 5</a>
+    <a href="./contadorcrescente.html">Página 6</a>
+    <a href="./contadordecrescente.html">Página 7</a>
+    <a href="./contadorsemaforoduplo.html">Página 8</a>
+</nav>
+    <h1>Tinkercad – SEMAFORO</h1>
+    <br>
+    <br>
+    <h2>Logo abaixo tem uma print de um circuito (SEMAFORO) no tinkercad</h2>
+    <div>
+        <img src="semafarosimples.jpg" alt="imagem de um semaforo simples">
+        <br>
+        <small>Fonte: Tinkercad</small>
+        <a href="https://www.tinkercad.com/things/iuxQesx5mZq-glorious-maimu-bruticus/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits">Tinkercad</a>
+    </div>
+    <br>
+    <br>
+    <h2>projeto no tinkercad (diagrama de blocos).</h2>
+    <div>
+        <img src="codigodeblocosmfsmples.jpg" alt="imagem do codigo em blocos">
+        <br>
+        <small>Fonte: Tinkercad</small>
+        <a href="https://www.tinkercad.com/things/kTHuGdwu2Ju-swanky-snicket-densor/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits">Tinkercad</a>
+    </div>
+    <br>
+    <br>
+    <h2>Logo abaixo tem o Código C++ do semaforo simples</h2>
+    <p>
+    // C++ code
+    <br>
+int counter;
+<br>
+
+int counter2;
+<br>
+
+int counter3;
+<br>
+
+void setup()
+<br>
+{
+    <br>
+  pinMode(12, OUTPUT);
+  <br>
+  pinMode(8, OUTPUT);
+  <br>
+  pinMode(4, OUTPUT);
+  <br>
+}
+<br>
+<br>
+
+void loop()
+<br>
+{
+    <br>
+  for (counter = 0; counter < 2; ++counter) {
+    <br>
+    digitalWrite(12, HIGH);
+    <br>
+    digitalWrite(8, LOW);
+    <br>
+    delay(7000); // Wait for 7000 millisecond(s)
+    <br>
+    digitalWrite(12, LOW);
+    <br>
+    digitalWrite(4, HIGH);
+    <br>
+    delay(5000); // Wait for 5000 millisecond(s)
+    <br>
+    digitalWrite(8, HIGH);
+    <br>
+    digitalWrite(4, LOW);
+    <br>
+    delay(1000); // Wait for 1000 millisecond(s)
+    <br>
+  }
+  <br>
+  for (counter2 = 0; counter2 < 5; ++counter2) {
+    <br>
+    digitalWrite(8, HIGH);
+    delay(2000); // Wait for 2000 millisecond(s)
+    <br>
+    digitalWrite(8, LOW);
+    <br>
+    delay(2000); // Wait for 2000 millisecond(s)
+    <br>
+  }
+  <br>
+}
+</p>
+    
+    
+</body>
+</html>

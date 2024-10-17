@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Página 5</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Página 1</a>
+        <a href="./tinkercad.html">Página 2</a>
+        <a href="./arduino.html">Página 3</a>
+        <a href="./semafaroduplo.html">Página 4</a>
+        <a href="./semafaroduploarduino.html">Página 5</a>
+        <a href="./contadorcrescente.html">Página 6</a>
+        <a href="./contadordecrescente.html">Página 7</a>
+        <a href="./contadorsemaforoduplo.html">Página 8</a>
+    </nav>
+    <h1>Semaforo Duplo - Prática</h1>
+    <br>
+    <br>
+    <h2>Logo abaixo está a foto da montagem do semaforo Duplo</h2>
+    <div>
+        <img src="smfduplopratica.jpg" alt="imagem do semafaro duplo na pratica">
+    </div>
+    <br>
+    <br>
+    <h2>Video do semaforo funcionando na pratica</h2>
+    <div>
+    <video src="videodosmfduplo.mp4" autoplay muted controls style="border-radius: 20px;"></video>
+</div>
+    <br>
+    <br>
+    <h2>Logo abaixo print do semfaro duplo no tinkercad</h2>
+    <div>
+        <img src="tkdsmf2.jpg" alt="imagem do semaforo no tinkercad">
+        <br>
+        <small>Fonte: Tinkercad</small>
+        <a href="https://www.tinkercad.com/things/3J4mU8nTgnG-bodacious-inari/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits">Tinkercad</a>
+    </div>
+    <br>
+    <br>
+    <h2>Abaixo ta o código C++ do circuito semaforo duplo</h2>
+    <pre>
+        <code>
+            // C++ code
+//
+void setup()
+{
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(9, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8, HIGH);
+  digitalWrite(13, HIGH);
+  delay(7000); // Wait for 7000 millisecond(s)
+  digitalWrite(13, LOW);
+  digitalWrite(12, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(12, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  delay(7000); // Wait for 7000 millisecond(s)
+  digitalWrite(10, LOW);
+  digitalWrite(9, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(9, LOW);
+  digitalWrite(11, LOW);
+  delay(1); // Wait for 1 millisecond(s)
+}
+        </code>
+    </pre>
+</body>
+</html>

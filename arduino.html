@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Página 3</title>
+</head>
+<body>
+  <nav>
+    <a href="./index.html">Página 1</a>
+    <a href="./tinkercad.html">Página 2</a>
+    <a href="./arduino.html">Página 3</a>
+    <a href="./semafaroduplo.html">Página 4</a>
+    <a href="./semafaroduploarduino.html">Página 5</a>
+    <a href="./contadorcrescente.html">Página 6</a>
+    <a href="./contadordecrescente.html">Página 7</a>
+    <a href="./contadorsemaforoduplo.html">Página 8</a>
+</nav>
+    <h1>ARDUINO - Semaforo simples</h1>
+    <br>
+    <br>
+    <h2>Logo abaixo foto da montagem prática do semaforo simples </h2>
+    <div>
+        <img src="montagempratica.jpg" alt="imagem da montagem pratica">
+    </div>
+    <br>
+    <br>
+    <h2>Video da montagem prática do semaforo simples com ARDUINO</h2>
+    <div>
+    <video src="videomontagem.mp4" autoplay muted controls style="border-radius: 20px;"></video>
+  </div>
+    <br>
+    <br>
+    <h2>Print do código C++ no IDE ARDUINO</h2>
+    <div>
+        <img src="printdoc++noide.jpg" alt="imagem do codigo c++ no arduino">
+        <br>
+        <small>Fonte: Arduino IDE</small>
+    </div>
+    <br>
+    <br>
+    <h2>Logo abaixo está o códiog C++</h2>
+    <p>
+        // C++ code
+        <br>
+        <br>
+        int counter;
+        <br>
+int counter2;
+<br>
+int counter3;
+<br>
+void setup()
+<br>
+<br>
+{
+    <br>
+  pinMode(12, OUTPUT);
+  <br>
+  pinMode(8, OUTPUT);
+  <br>
+  pinMode(4, OUTPUT);
+  <br>
+}
+<br>
+<br>
+void loop()
+<br>
+{
+    <br>
+  for (counter = 0; counter < 2; ++counter) {
+    <br>
+    digitalWrite(12, HIGH);
+    <br>
+    digitalWrite(8, LOW);
+    <br>
+    delay(7000); // Wait for 7000 millisecond(s)
+    <br>
+    digitalWrite(12, LOW);
+    <br>
+    digitalWrite(4, HIGH);
+    <br>
+    delay(5000); // Wait for 5000 millisecond(s)
+    <br>
+    digitalWrite(8, HIGH);
+    <br>
+    digitalWrite(4, LOW);
+    <br>
+    delay(1000); // Wait for 1000 millisecond(s)
+    <br>
+  }
+  <br>
+  for (counter2 = 0; counter2 < 5; ++counter2) {
+    <br>
+    digitalWrite(8, HIGH);
+    <br>
+    delay(2000); // Wait for 2000 millisecond(s)
+    <br>
+    digitalWrite(8, LOW);
+    <br>
+    delay(2000); // Wait for 2000 millisecond(s)
+    <br>
+  }
+  <br>
+}
+    </p>
+
+
+    
+</body>
+</html>
